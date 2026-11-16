@@ -1,4 +1,5 @@
-import { FormEvent, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
+import type { FormEvent } from "react";
 
 type Category = "All" | "Shirts" | "Trousers" | "Football Jerseys";
 type ProductCategory = Exclude<Category, "All">;
