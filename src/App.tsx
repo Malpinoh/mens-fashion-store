@@ -69,10 +69,10 @@ export default function App() {
   };
 
   return <div className="app">
-    <div className="topbar">A considered collection of everyday menswear</div>
+    <div className="topbar">TrendHaven — Shop Smart. Dress Better.</div>
     <header className="header">
       <button className="menuBtn" onClick={() => setMenu(!menu)} aria-label="Toggle menu">☰</button>
-      <a className="brand" href="#">MF<span>.</span></a>
+      <a className="brand brandLogo" href="#" aria-label="TrendHaven home"><img src="/trendhaven-logo.svg" alt="TrendHaven Men's Fashion Store" /></a>
       <nav className={menu ? "nav open" : "nav"}>{categories.map(c => <button key={c} className={category === c ? "active" : ""} onClick={() => { setCategory(c); setMenu(false); document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" }); }}>{c}</button>)}</nav>
       <div className="actions"><div className="search"><span>⌕</span><input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search products..." aria-label="Search products" /></div><button className="cart" onClick={() => document.getElementById("cart")?.scrollIntoView({ behavior: "smooth" })}>Bag <b>{itemCount}</b></button></div>
     </header>
@@ -97,6 +97,6 @@ export default function App() {
 
     {selectedProduct && <div className="modalBackdrop" role="presentation" onMouseDown={e => { if (e.target === e.currentTarget) setSelectedProduct(null); }}><section className="productModal" role="dialog" aria-modal="true" aria-label={selectedProduct.name}><button className="modalClose" onClick={() => setSelectedProduct(null)} aria-label="Close details">×</button><img className="modalImage" src={selectedProduct.image} alt={selectedProduct.name} /><div className="modalDetails"><p className="eyebrow">{selectedProduct.category}</p><h2>{selectedProduct.name}</h2><strong className="modalPrice">{money(selectedProduct.price)}</strong><p>{selectedProduct.description}</p><small className={selectedProduct.stock <= 6 ? "stock low" : "stock"}>{selectedProduct.stock} available</small><label>Choose size<select value={selectedSize} onChange={e => setSelectedSize(e.target.value)}>{selectedProduct.sizes.map(size => <option key={size} value={size}>{size}</option>)}</select></label><label>Choose colour<select value={selectedColor} onChange={e => setSelectedColor(e.target.value)}>{selectedProduct.colors.map(color => <option key={color} value={color}>{color}</option>)}</select></label><button className="primary addButton" disabled={selectedProduct.stock < 1} onClick={() => addToCart(selectedProduct, selectedSize, selectedColor)}>{selectedProduct.stock > 0 ? "Add to bag" : "Out of stock"}</button></div></section></div>}
 
-    <footer><div><div className="brand">MF<span>.</span></div><p>Men's fashion, made simple.</p></div><small>© 2026 Men's Fashion Store. All rights reserved.</small></footer>
+    <footer><div><div className="brand brandLogo"><img src="/trendhaven-logo.svg" alt="TrendHaven Men's Fashion Store" /></div><p>Shop smart. Dress better.</p></div><small>© 2026 Men's Fashion Store. All rights reserved.</small></footer>
   </div>;
 }
