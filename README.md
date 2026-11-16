@@ -1,6 +1,6 @@
-# Men's Fashion Store
+# TrendHaven — Men's Fashion Store
 
-A mobile-first men's fashion storefront built with React, TypeScript and Vite.
+A mobile-first men's fashion storefront built with React, TypeScript and Vite. TrendHaven is a temporary store name and can be changed when the seller confirms the final brand identity.
 
 ## Current features
 - Men's shirts, trousers and football/soccer jerseys
@@ -10,6 +10,7 @@ A mobile-first men's fashion storefront built with React, TypeScript and Vite.
 - Cart with size/colour variants, quantity controls, item removal and subtotal calculation
 - Customer delivery-details form prepared for payment integration
 - No WhatsApp checkout; online payments will be integrated later
+- TrendHaven logo, favicon and social sharing metadata
 - SEO-ready page metadata
 - Automated GitHub Actions build check
 
