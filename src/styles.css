@@ -195,3 +195,35 @@ main,.siteHeader,.categoryNav,.footer{min-width:0}
 .previewUnavailable span{max-width:310px;font-size:11px;line-height:1.7;color:#777}
 @media(max-width:760px){.archiveFilters{grid-template-columns:1fr 1fr;gap:10px;padding:13px}.archiveCoverage{margin-bottom:30px}.archiveLeagueHeading h2{font-size:23px}}
 @media(max-width:420px){.archiveFilters{grid-template-columns:1fr}.archiveFilters label{font-size:9px}}
+
+
+/* Full JM980 season-by-season kit archive */
+.seasonIndexSection{margin:12px 0 54px}
+.seasonIndexGrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.seasonIndexButton{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:15px 13px;border:1px solid #e4e4df;background:#fff;color:#171717;text-align:left;cursor:pointer;transition:border-color .18s,background .18s}
+.seasonIndexButton:hover{border-color:#111;background:#f7f7f4}
+.seasonIndexButton strong{font-size:13px}
+.seasonIndexButton span{font-size:10px;color:#777}
+.archiveClubList{display:grid;gap:34px}
+.archiveClub{padding:0 0 30px;border-bottom:1px solid #e8e8e3}
+.archiveClubHeading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:16px}
+.archiveClubHeading .eyebrow{margin:0 0 5px}
+.archiveClubHeading h3{margin:0;font-size:20px;letter-spacing:-.035em}
+.archiveClubHeading>span{font-size:10px;color:#777;text-align:right}
+.archiveKitGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.archiveKitProduct,.archiveKitPlaceholder{min-width:0}
+.archiveKitTypeLabel{padding:9px 10px;background:#f3f3ef;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.archiveKitPlaceholder{border:1px solid #e8e8e3;background:#fafaf8;min-height:260px;display:flex;flex-direction:column}
+.archiveKitPlaceholderBody{padding:18px 13px;display:flex;flex:1;flex-direction:column;align-items:flex-start;justify-content:center;gap:9px}
+.archiveKitIcon{width:30px;height:30px;display:grid;place-items:center;border:1px dashed #bdbdb5;border-radius:50%;font-size:18px;color:#777}
+.archiveKitPlaceholderBody strong{font-size:12px}
+.archiveKitPlaceholderBody p{margin:0;color:#777;font-size:10px;line-height:1.65}
+.archiveKitPlaceholderBody a{margin-top:4px;color:#171717;font-size:10px;text-decoration:underline;text-underline-offset:3px}
+.archiveFootnote{margin:30px 0;padding:18px 20px;background:#f7f7f4;border-left:3px solid #a4a49a}
+.archiveFootnote strong{font-size:12px}
+.archiveFootnote p{margin:7px 0 0;color:#777;font-size:11px;line-height:1.7}
+.archiveKitProduct .productCard{height:100%}
+.archiveKitProduct .productMeta>span{font-size:9px}
+@media(max-width:1000px){.seasonIndexGrid{grid-template-columns:repeat(5,minmax(0,1fr))}.archiveKitGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.seasonIndexGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.seasonIndexButton{padding:12px 9px}.archiveClubHeading{align-items:flex-start;flex-direction:column}.archiveClubHeading>span{text-align:left}.archiveKitGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
+@media(max-width:380px){.seasonIndexGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.archiveKitGrid{grid-template-columns:1fr}}
