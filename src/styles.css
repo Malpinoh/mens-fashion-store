@@ -112,3 +112,54 @@ main,.siteHeader,.categoryNav,.footer{min-width:0}
 
 /* Jersey product option controls */
 .optionSection{border-top:1px solid var(--line);padding-top:16px;margin-top:16px}.optionTitle{display:flex;justify-content:space-between;align-items:center;font-size:12px;margin-bottom:9px}.optionTitle span{font-size:10px;color:var(--muted)}.optionButtons{display:flex;gap:8px;flex-wrap:wrap}.optionButton{border:1px solid #d8d8d4;background:#fff;padding:11px 14px;font-size:11px;border-radius:4px}.optionButton.selected{border-color:#111;box-shadow:inset 0 0 0 1px #111}.leagueBadgeButtons .optionButton{min-width:74px}.deliveryField{margin-top:17px}.priceBreakdown{border-top:1px solid var(--line);margin-top:18px;padding-top:15px;display:grid;gap:8px;font-size:11px;color:var(--muted)}.priceBreakdown span{display:flex;justify-content:space-between;gap:15px}.priceBreakdown strong{color:#151515}.priceBreakdown>div{border-top:1px solid #ddd;padding-top:12px;margin-top:4px;display:flex;justify-content:space-between;font-size:14px;color:#151515}.customizerHead .customPrice{font-size:15px}@media(max-width:560px){.optionButtons{display:grid;grid-template-columns:1fr 1fr}.optionButton{width:100%;padding:11px 8px}.leagueBadgeButtons{grid-template-columns:repeat(3,1fr)}.priceBreakdown{font-size:10px}.customizerHead{align-items:flex-start}}
+
+
+/* Expanded JM980 storefront homepage */
+.leagueSection,.howSection,.faqSection{padding:70px 5.5vw}
+.leagueGrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.leagueTile{min-height:145px;padding:20px;background:#f5f5f2;display:flex;flex-direction:column;justify-content:space-between;transition:background .2s,transform .2s}
+.leagueTile:hover{background:#e9f5ee;transform:translateY(-3px)}
+.leagueTile>span,.stepsGrid article>span{font-size:10px;letter-spacing:.16em;color:#777}
+.leagueTile strong{font-size:17px;letter-spacing:-.04em}
+.leagueTile small{font-size:10px;color:#666}
+.categoryFeatureGrid{padding:0 5.5vw 75px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.categoryFeature{height:330px;position:relative;overflow:hidden;background:#111;color:#fff}
+.categoryFeature:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#000a,transparent 75%)}
+.categoryFeature img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .4s}
+.categoryFeature:hover img{transform:scale(1.04)}
+.categoryFeature>div{position:absolute;z-index:1;left:28px;bottom:25px}
+.categoryFeature .eyebrow{color:#eee}
+.categoryFeature h2{font-size:30px;letter-spacing:-.05em;margin:0 0 8px}
+.categoryFeature span{font-size:11px}
+.customPromo{padding:75px 8vw;background:#f4f4f1;display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}
+.customPromoImage{height:440px;background:#fff;display:grid;place-items:center;overflow:hidden}
+.customPromoImage img{width:100%;height:100%;object-fit:contain;padding:18px}
+.customPromo h2,.deliverySection h2{font-size:clamp(38px,5vw,58px);line-height:.98;letter-spacing:-.06em;margin:0 0 18px}
+.customPromo>div:last-child>p:not(.eyebrow),.deliverySection>div:first-child>p:not(.eyebrow){font-size:13px;line-height:1.9;color:#666;max-width:480px;margin-bottom:25px}
+.howSection{padding-top:80px;padding-bottom:85px}
+.stepsGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.stepsGrid article{border-top:1px solid #ddd;padding-top:18px}
+.stepsGrid h3{font-size:18px;margin:22px 0 8px}
+.stepsGrid p{font-size:12px;line-height:1.8;color:#777;max-width:300px}
+.deliverySection{padding:75px 8vw;background:#151515;color:#fff;display:grid;grid-template-columns:1.1fr .9fr;gap:8vw;align-items:center}
+.deliverySection .eyebrow{color:#aaa}
+.deliverySection>div:first-child>p:not(.eyebrow){color:#bbb}
+.deliverySection .textLink{color:#fff;border-color:#18b968}
+.deliveryFacts{display:grid;gap:0}
+.deliveryFacts>div{padding:18px 0;border-bottom:1px solid #444;display:grid;gap:6px}
+.deliveryFacts strong{font-size:14px}
+.deliveryFacts span{font-size:11px;color:#aaa}
+.faqSection{max-width:1100px;margin:0 auto}
+.faqList details{border-top:1px solid #ddd;padding:18px 0}
+.faqList details:last-child{border-bottom:1px solid #ddd}
+.faqList summary{font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faqList summary:after{content:"+";font-size:18px;font-weight:400}
+.faqList details[open] summary:after{content:"−"}
+.faqList details p{font-size:12px;line-height:1.8;color:#777;max-width:720px;margin:13px 0 0}
+.finalCta{background:#d9eee2;padding:75px 5vw;text-align:center;display:flex;flex-direction:column;align-items:center}
+.finalCta h2{font-size:clamp(42px,7vw,70px);letter-spacing:-.06em;margin:0 0 25px}
+.previewUnavailable{width:100%;height:100%;min-height:260px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;background:#f2f1ed;color:#222}
+.previewUnavailable strong{font-size:15px}
+.previewUnavailable span{max-width:280px;font-size:11px;line-height:1.7;color:#777}
+@media(max-width:850px){.leagueGrid{grid-template-columns:repeat(3,minmax(0,1fr))}.customPromo{padding:60px 6vw;gap:5vw}.customPromoImage{height:350px}.deliverySection{padding:60px 6vw}}
+@media(max-width:560px){.leagueSection,.howSection,.faqSection{padding:55px 5vw}.leagueGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.leagueTile{min-height:120px;padding:15px}.leagueTile strong{font-size:15px}.categoryFeatureGrid{padding:0 5vw 55px;grid-template-columns:1fr}.categoryFeature{height:260px}.customPromo{padding:55px 5vw;grid-template-columns:1fr;gap:28px}.customPromoImage{height:300px}.stepsGrid{grid-template-columns:1fr;gap:18px}.stepsGrid article{padding-top:14px}.stepsGrid h3{margin:12px 0 5px}.deliverySection{padding:55px 6vw;grid-template-columns:1fr;gap:30px}.finalCta{padding:60px 5vw}.previewUnavailable{min-height:220px;padding:20px}}
