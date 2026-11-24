@@ -173,3 +173,25 @@ main,.siteHeader,.categoryNav,.footer{min-width:0}
 .leagueTile strong{margin-top:auto}
 .leagueTile small{margin-top:2px}
 @media(max-width:560px){.leagueTile{min-height:165px;gap:8px}.leagueLogoWrap{height:66px}.leagueLogo{max-width:125px;max-height:60px}}
+
+
+/* JM980 historical jersey archive */
+.archiveFilters{display:grid;grid-template-columns:1fr 1fr 1fr 1.4fr;gap:12px;margin:28px 0 18px;padding:18px;background:#f6f6f3;border:1px solid #e8e8e2}
+.archiveFilters label{display:grid;gap:7px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;min-width:0}
+.archiveFilters select,.archiveFilters input{width:100%;min-width:0;height:43px;padding:0 11px;border:1px solid #d8d8d4;background:#fff;font-size:12px;text-transform:none;letter-spacing:normal}
+.archiveCoverage{display:grid;gap:6px;padding:15px 17px;border-left:3px solid #18b968;background:#f8f8f6;margin-bottom:42px}
+.archiveCoverage strong{font-size:12px}
+.archiveCoverage span{font-size:11px;color:#777;line-height:1.65}
+.archiveLeague{margin:0 0 54px}
+.archiveLeagueHeading{display:flex;align-items:end;justify-content:space-between;margin-bottom:22px;border-bottom:1px solid #e5e5e2;padding-bottom:14px}
+.archiveLeagueHeading .eyebrow{margin-bottom:7px}
+.archiveLeagueHeading h2{font-size:27px;letter-spacing:-.05em;margin:0}
+.archiveLeagueHeading>span{font-size:11px;color:#777}
+.archiveEmpty{padding:55px 22px;text-align:center;background:#f7f7f5;border:1px dashed #d5d5cf}
+.archiveEmpty h2{font-size:22px;margin:0 0 10px}
+.archiveEmpty p{max-width:650px;margin:0 auto;color:#777;font-size:12px;line-height:1.8}
+.previewUnavailable{width:100%;height:100%;min-height:240px;padding:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;color:#555;background:repeating-linear-gradient(135deg,#f2f2ef,#f2f2ef 12px,#ecece8 12px,#ecece8 24px)}
+.previewUnavailable strong{font-size:13px}
+.previewUnavailable span{max-width:310px;font-size:11px;line-height:1.7;color:#777}
+@media(max-width:760px){.archiveFilters{grid-template-columns:1fr 1fr;gap:10px;padding:13px}.archiveCoverage{margin-bottom:30px}.archiveLeagueHeading h2{font-size:23px}}
+@media(max-width:420px){.archiveFilters{grid-template-columns:1fr}.archiveFilters label{font-size:9px}}
