@@ -227,3 +227,5 @@ main,.siteHeader,.categoryNav,.footer{min-width:0}
 @media(max-width:1000px){.seasonIndexGrid{grid-template-columns:repeat(5,minmax(0,1fr))}.archiveKitGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.seasonIndexGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.seasonIndexButton{padding:12px 9px}.archiveClubHeading{align-items:flex-start;flex-direction:column}.archiveClubHeading>span{text-align:left}.archiveKitGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
 @media(max-width:380px){.seasonIndexGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.archiveKitGrid{grid-template-columns:1fr}}
+
+.archiveImageStatus{display:grid;gap:6px;width:100%;margin:12px 0;color:var(--muted,#777);font-size:11px;letter-spacing:.06em;font-weight:700}.archiveImageStatus span{padding:8px 10px;border:1px dashed currentColor;border-radius:6px}
