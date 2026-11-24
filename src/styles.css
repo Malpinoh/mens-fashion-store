@@ -106,3 +106,4 @@ main,.siteHeader,.categoryNav,.footer{min-width:0}
   .customPrint span{font-size:13px}
   .customPrint strong{font-size:52px}
 }
+\n/* Club-style nameset realism */\n.customPrint span,.customPrint strong{paint-order:stroke fill;text-rendering:geometricPrecision}.customPrint span{-webkit-text-stroke:.35px rgba(0,0,0,.18)}.customPrint strong{-webkit-text-stroke:.65px rgba(0,0,0,.16)}.customPrint{mix-blend-mode:multiply;filter:saturate(.96);transform:translate(-50%,-50%) perspective(700px) rotateX(1deg)}\n
